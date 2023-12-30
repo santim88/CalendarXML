@@ -13,5 +13,111 @@
         android:layout_height="wrap_content"
         tools:ignore="MissingConstraints" />
 
+    <androidx.cardview.widget.CardView
+        android:layout_width="382dp"
+        android:layout_height="134dp"
+        android:layout_margin="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="346dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:background="?attr/colorPrimary">
+
+                <TextView
+                    android:id="@+id/dayAndMonthCalendar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:paddingStart="5dp"
+                    android:text="6 March"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/dayCalendar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="8dp"
+                    android:paddingStart="10dp"
+                    android:text="THURSDAY"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/editEvent"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:scrollbarSize="3dp"
+                    android:src="@drawable/baseline_add_24" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!--cual es la diferencia con star-->
+                <TextView
+                    android:id="@+id/eventName"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Nombre: tin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/eventHour"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Hora: 16:27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!--cual es la diferencia con star-->
+                <TextView
+                    android:id="@+id/eventme"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Nombre: tin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/eveHour"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Hora: 16:27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

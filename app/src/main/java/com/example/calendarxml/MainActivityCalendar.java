@@ -15,7 +15,7 @@ import java.util.Locale;
 
 public class MainActivityCalendar extends AppCompatActivity {
 
-    CalendarView calendarView;
+    /*CalendarView calendarView;
     Calendar calendar;
 
     @Override
@@ -47,5 +47,5 @@ public class MainActivityCalendar extends AppCompatActivity {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yy", Locale.getDefault());
         String selected_date = simpleDateFormat.format(calendar.getTime());
         Toast.makeText(this, selected_date, Toast.LENGTH_SHORT).show();
-    }
+    }*/
 }
